@@ -164,9 +164,27 @@ LLI fast_exp(int base, int exp ,int mod=MOD) {
 /**************************************/
 
 
+int digits(int n)
+{
+    int x=1,dig=0;
+    while(x < n)
+    {
+        dig+=1;
+        x *= 10;
+    }
+    return dig;
+
+}
 
 
-
+void print(VLLI x)
+{
+    REP(i,x.size())
+    {
+        cout<<x[i]<<" ";
+    }
+    cout<<endl;
+}
 
 
 
@@ -174,36 +192,6 @@ LLI fast_exp(int base, int exp ,int mod=MOD) {
 int main()
 {
 
- #ifndef ONLINE_JUDGE
-   freopen("input.txt","r",stdin);
-   freopen("output.txt","w",stdout);
-#endif
-
-  LLI n;
-  cin>>n;
-  while(n != 0)
-  {
-    map<string,bool> ignore;
-    REP(i,n)
-    {
-      string s;
-      cin>>s;
-      ignore[s]=true;
-    }
-    string tot;
-    cin>>tot;
-    while(tot != "LAST CASE")
-    {
-        int curw = 0;
 
 
-
-        cin>>tot;
-    }
-
-
-    cin>>n;
-  }
-
-  return 0;
 }
