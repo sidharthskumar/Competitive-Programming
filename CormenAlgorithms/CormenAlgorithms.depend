@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1466512846 source:c:\cormenalgorithms\insertionsort.cpp
-	<cmath>
-	<cstdio>
-	<vector>
-	<iostream>
-	<algorithm>
-
