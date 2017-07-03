@@ -11,6 +11,7 @@
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((int) (x).size())
 #define rep(i, n) for (int i = 0; i < (n); i++)
+#define FOR(i,a,b) for(int i = (a); i <= (b); i++)
 #define rrep(i, n) for (int i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
@@ -30,7 +31,7 @@ typedef pair<ll, ll> pll;
 const int inf = INT_MAX; 
 const double eps = 1e-9;
 const double pi = acos(-1.0);
-#define MOD 1000000007
+const int  MOD =  1000000007;
 
 /* important functions */
 template <typename T>
@@ -72,7 +73,7 @@ void prvec(T a){
 }
 /* Declare variables here*/
 ll T;
-
+int m,n;
 
 /* user define functions specific to problem */
 
@@ -82,8 +83,15 @@ ll T;
 /* solve here */
 void solve()
 {
-  
-
+    cin>>m>>n;
+    if(m %2 == 0)
+    {
+        cout<<m/2 * n;
+    }
+    else
+    {
+        cout<<m/2*n + n/2;
+    }
 
 }
 
