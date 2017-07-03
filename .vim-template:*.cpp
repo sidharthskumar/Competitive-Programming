@@ -67,7 +67,7 @@ ll powmod(ll base, ll exp ,ll mod=MOD) {
 
 ll inv(ll a, ll m = MOD)
 {
-    return powmod(a, m-1,m);
+    return powmod(a, m-2,m);
 }
 
 void prnt(auto beg, auto end){
