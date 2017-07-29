@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -86,7 +87,9 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+   vi a; 
+   FOR(i,1,5e5) a.pb(i);
+   sort(all(a));
 
 }
 
@@ -97,8 +100,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  T = 10;
+  while(T--)
   solve();
   
   return 0;

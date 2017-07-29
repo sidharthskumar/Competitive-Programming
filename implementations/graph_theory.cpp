@@ -56,7 +56,51 @@ void dfs(vector< vector<int> > g, int n, int v)
     }
 }
 
+class UnionFind
+{
 
+public:
+        struct subset
+        {
+            int parent;
+            int rank;
+        };
+        subset* subsets;
 
+        UnionFind(int n)
+        {
+            subsets = new subset[n];
+            for(int i = 0; i < n; i++)
+            {
+                subsets[i].parent = i;
+                subsets[i].rank = 0;
+            }
+        }
+
+        int find(int i)
+        {
+            if (subsets[i].parent != i)
+                subsets[i].parent = find(subsets[i].parent);
+            return subsets[i].parent;
+
+        }
+
+        void Union(int x, int y)
+        {
+            int xroot = find(x);
+            int yroot = find(y);
+
+            if (subsets[xroot].rank < subsets[yroot].rank)
+                subsets[xroot].parent = yroot;
+            else if (subsets[xroot].rank > subsets[yroot].rank)
+                subsets[yroot].parent = xroot;
+
+            else
+            {
+                subsets[yroot].parent = xroot;
+                subsets[xroot].rank++;
+            }
+        }
+};
 
 

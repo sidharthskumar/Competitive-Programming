@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,8 +77,8 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+map<string,ll> dp;
+ll n;
 /* user define functions specific to problem */
 
 
@@ -86,8 +87,19 @@ ll T;
 /* solve here */
 void solve()
 {
-     
-
+     cin>>n;
+     while(n--){
+         string a,crap,b;
+         cin>>a>>crap>>b;
+         rep(i,sz(a)) a[i] = tolower(a[i]);
+         rep(i,sz(b)) b[i] = tolower(b[i]);
+         dp[a] = dp[b] + 1;
+     }
+     ll mx = -1;
+     for(auto kv : dp){
+         mx = max(mx,kv.se);
+     }
+     cout<<mx+1<<endl;
 }
 
 /* main function */

@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,18 +77,37 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+ll n;
+const ll MAXN = 1500;
+int x[MAXN] , y[MAXN];
+int used[MAXN];
+ll ans;
 /* user define functions specific to problem */
 
+void dfs(ll v)
+{
+    used[v] = 1;
+    for(int i=0; i < n;i++){
+        if(!used[i] && (x[i] == x[v] || y[i] == y[v])) dfs(i);
+    }
+}
 
 
 
 /* solve here */
 void solve()
 {
-     
-
+    cin>>n;
+    rep(i,n) {
+        cin>>x[i]>>y[i];
+    }
+    rep(i,n){
+        if(!used[i]){
+            dfs(i);
+            ans++;
+        }
+    }
+    cout<<ans-1;
 }
 
 /* main function */

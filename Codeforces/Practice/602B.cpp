@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -75,9 +76,10 @@ void prnt(T beg, T end){
 }
 
 /* Declare variables here*/
-ll T;
-
-
+ll T,n;
+const ll MAXN = 1e6;
+ll a[MAXN];
+ll l;
 /* user define functions specific to problem */
 
 
@@ -86,7 +88,27 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+    cin>>n;
+    rep(i,n) cin>>a[i];
+    ll lastnz = -2;
+    ll lasti = -2;
+    ll mx = -1;
+    FOR(i,1,n-1){
+        ll diff = a[i] - a[i-1];
+        if(diff != 0 && diff == lastnz) {
+            //cout<<"last l"<<l;
+            mx = max(mx,i-l);
+            l = lasti;
+            //cout<<"l=" << l<< "i= "<< i <<endl;
+        }
+        if(diff != 0) { 
+            lastnz = diff;
+            lasti = i;
+         }
+    }
+    mx = max(mx,n-l);
+    cout<<mx;
+
 
 }
 

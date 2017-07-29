@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,8 +77,11 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+ll n,k;
+const ll maxn = 3000;
+const ll bbmaxn = 2e7 , bbmin = 4e6;
+ll a[maxn] , b[maxn] , s[maxn];
+ll bb[bbmaxn];
 /* user define functions specific to problem */
 
 
@@ -86,7 +90,41 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+   cin>>k>>n;
+   rep(i,k) cin>>a[i]; 
+
+   ll mx = LLONG_MIN;
+   rep(i,n) { cin>>b[i]; bb[bbmin+b[i]] = 1;  mx = max(mx,b[i]);}
+   s[0] = a[0];
+   FOR(i,1,k-1) s[i] = s[i-1] + a[i];
+   ll inda = k-1;
+   ll cnt = 0;
+   unordered_map<ll,ll> added;
+   while(inda >= 0){
+       rep(i,n) bb[bbmin+b[i]]  = 1;
+       ll bbcnt = n;
+       ll st = mx - s[inda]; 
+       if(added.count(st)){ inda--; continue; }
+       added[st] = 1;
+       ll curra = k-1;
+       int flag = 0;
+       while(curra >= 0){
+           if(bb[bbmin+s[curra] + st] == 1){
+               //cout<<"scur"<<s[curra] <<"st"<<st<<endl; 
+               bb[bbmin+s[curra] + st] = 0;
+               bbcnt--;
+               if(bbcnt == 0){
+                   flag = 1;
+                   break;
+               }
+           } 
+           curra--;
+       }
+       if(flag) cnt++;
+       inda--;
+   }
+   cout<<cnt;
+    
 
 }
 

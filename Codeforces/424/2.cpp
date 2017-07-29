@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -86,7 +87,19 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+  map<char,char> ref;  
+  string a,b,c;
+  cin>>a;
+  cin>>b;
+  cin>>c;
+  rep(i,26){
+      ref[tolower(a[i])] = tolower(b[i]);
+      ref[toupper(a[i])] = toupper(b[i]);
+  }
+  rep(i,c.length()){
+      if(isdigit(c[i])) cout<<c[i];
+      else cout<<ref[c[i]];
+  }
 
 }
 

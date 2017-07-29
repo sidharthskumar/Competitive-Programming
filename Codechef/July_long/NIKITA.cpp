@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -86,17 +87,59 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+    int n;
+    cin>>n;
+    cin.ignore();
+      rep(i,n)
+      {
+        string s;
+       getline(cin,s);
+       int nspaces = count(all(s),' ');
+       int ns = 0;
+       string::iterator it = s.begin();
+       vs str(3);
+       while(it != s.end()){
+          while(it != s.end() && *it != ' '){
+            str[ns] += *it;
+            it++;
+           }
+          if(it != s.end()) {
+              it++;
+              ns++;
+           }
+       }
+       if(nspaces == 0){
+           FOR(i,1,str[0].length()) str[0][i] = tolower(str[0][i]);
+          str[0][0] = toupper(str[0][0]);
+          cout<<str[0]<<endl;
+       }
+       else if(nspaces == 1){
+           str[0][0] =toupper(str[0][0]);
+           FOR(i,1,str[1].length()) str[1][i] = tolower(str[1][i]);
+           str[1][0] = toupper(str[1][0]);
+           cout<<str[0][0]<<". "<<str[1]<<endl;
+       }
+       else {
+           str[0][0] = toupper(str[0][0]);
+           FOR(i,1,str[1].length()) str[1][i] = tolower(str[1][i]);
 
-}
+           str[1][0] = toupper(str[1][0]);
+           FOR(i,1,str[2].length()) str[2][i] = tolower(str[2][i]);
+
+           str[2][0] = toupper(str[2][0]);
+           cout<<str[0][0]<<". "<<str[1][0]<<". "<<str[2]<<endl;
+       }
+             
+      }
+ }
 
 /* main function */
 
 int main() 
 {
-  std::ios::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0); 
+  //std::ios::sync_with_stdio(false);
+  ///cin.tie(0);
+  //cout.tie(0); 
   //cin>>T;
   //while(T--)
   solve();

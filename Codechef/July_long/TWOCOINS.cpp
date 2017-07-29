@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -75,18 +76,68 @@ void prnt(T beg, T end){
 }
 
 /* Declare variables here*/
-ll T;
+int T;
+const int maxn = 2e5;
 
 
 /* user define functions specific to problem */
 
-
-
+struct node {
+    int v;
+    bool flag;
+};
 
 /* solve here */
 void solve()
 {
-     
+  int n;
+  cin>>n;
+  if(n==1) {
+      cout<<-1<<endl;
+      return;
+  }
+  vector< unordered_set<int> > g(maxn);
+  rep(i,n-1){
+      int u,v;
+      cin>>u>>v;
+      g[u].insert(v);
+      g[v].insert(u);
+  } 
+  queue<node> leaves; 
+  for(int i=2 ; i<= n; i++){
+      if(sz(g[i]) == 1){
+          leaves.push({i,true});
+      }   
+  }
+  vi coin(n+1,0);
+  if(sz(g[1]) == 0) coin[1] = 1;
+  else {
+      int tcheck = 0;
+      for(auto &v : g[1]){
+          if(sz(g[v])){
+               tcheck = 1;
+               break;
+          }
+      }
+      if(tcheck) coin[1] = 1;
+  }
+  bool last = false;
+  while(sz(leaves) > 0){
+      node fr = leaves.front();
+      if(fr.flag) coin[fr.v] = 1;
+      last = fr.flag;
+      int par = *(g[fr.v].begin());
+      g[par].erase(fr.v);
+      if(sz(g[par])==1 && par != 1) leaves.push({par,!fr.flag });
+      leaves.pop();
+  }
+  if(!last){
+      coin[1] = 1;
+  }
+  ll cnt = 0;
+  FOR(i,1,n) if(coin[i]==1) cnt++;
+  cout<<cnt<<endl;
+      
 
 }
 
@@ -97,8 +148,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   
   return 0;

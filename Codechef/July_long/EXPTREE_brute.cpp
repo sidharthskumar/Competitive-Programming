@@ -46,7 +46,7 @@ ll xdiv(ll a,ll b)
 }
 
 ll gcd(ll a, ll b) {
-  ll r, i;
+  ll r;
   while(b!=0){
     r = a % b;
     a = b;
@@ -69,49 +69,90 @@ ll inv(ll a, ll m = MOD)
 {
     return powmod(a, m-2,m);
 }
-
-void prnt(auto beg, auto end){
+template <typename T> 
+void prnt(T beg, T end){
   for(auto it = beg; it != end; it++) cout<<*it<<" ";
   cout<<endl;
 }
 
 /* Declare variables here*/
 ll T;
-const ll MAXN = 2e6;
-ll s[MAXN];
-string z;
-ll n,k;
+const ll maxn = 1e6;
 
 /* user define functions specific to problem */
-bool predicate(ll mid)
-{
-    bool flag = false;
-    rep(i,n-mid+1){
-        ll na = s[i+mid] - s[i];
-        ll nb = mid - na;
-        if(min(na,nb) <= k) flag = true;
-    }
-    return !flag;
+
+
+bool inc(ll a, ll b,ll c){
+    return  a < b && b < c;
+}
+
+bool dec(ll a, ll b , ll c){
+    return a > b && b > c;
 }
 
 
 /* solve here */
 void solve()
 {
-    cin>>n>>k;
-    cin>>z;
-    ll lo = 1, hi = n+1;
-    rep(i,n) if(z[i] == 'a') s[i+1] = s[i]+1; else s[i+1]=s[i];
-    //prnt(s,s+n+1);
-    while(lo < hi)
-    {
-        ll mid = lo + ((hi-lo)>>1);
-        //cout<<"lo "<<lo<<"hi "<<hi<<"mid "<<mid<<endl;
-        if(predicate(mid)) hi = mid;
-        else lo = mid+1;
-    }
-    cout<<lo-1;
-
+  ll n;
+  cin>>n;
+  vll g[n+1];
+  int coin[n+1];
+  FOR(i,1,n) coin[i] = 1;
+  rep(i,n-1){
+      ll u,v;
+      cin>>u>>v;
+      g[u].pb(v);
+      g[v].pb(u);
+  }
+  ll ans = 0;
+  FOR(i,1,n)
+  {
+      coin[i] = 0;
+      int valid = 1;
+      int fc = 0;
+      for(auto & v: g[i]){
+          if(coin[v] == 1) fc++;
+      }
+      cout<<"testing"<<i<<" first level "<<fc<<endl;
+      if(fc < 2) valid = 0;
+     
+      for(auto & v : g[i]){
+          int nc = 0;
+          if(coin[v] == 0)
+          {
+              for(auto & next : g[v]){
+                  if(coin[next] == 1) nc++;  
+              }
+              if(nc < 2) { 
+                  valid = 0; 
+                  break;
+              }
+          }
+          else 
+          {
+              int check = 0;
+              for(auto& cur : g[v]){
+                  if(coin[cur] == 1) { check = 1; break; }
+                  for(auto & next : g[cur]){
+                        if(coin[next] == 1 && (inc(v,cur,next) || dec(v,cur,next))) { check = 1; break;}
+                  }
+                  if(check==1) break;
+              }
+              if(!check){
+                 valid = 0;
+                 break;
+              }
+          }
+          cout<<"checking neighbour "<<v<<" count"<<nc<<endl;  
+      }
+       if(!valid) {
+           cout<<"could not remove "<<i<<endl;
+           coin[i] = 1;
+           ans++;
+        }
+  }
+  cout<<ans<<endl;
 }
 
 /* main function */
@@ -121,8 +162,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   
   return 0;

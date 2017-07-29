@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -86,10 +87,40 @@ ll T;
 /* solve here */
 void solve()
 {
-     
-
+  string s;
+  cin>>s;
+  ll n = s.length();
+  vll num(n+1,1);
+  ll i = 0;
+  while(i < n)
+  {
+      ll j = i+1;
+      while(j < n && (s[j] == '=' || s[j] == s[i])) j++;
+      //cout<<"i = "<<i<<"j= "<<j<<endl;
+      if(s[i] == '<')
+      {
+         ll k = i;
+         ll temp = 1;
+         while( k  <=  j){
+            num[k] = max(num[k],temp);
+            if(s[k] != '=' )temp++;
+            k++;
+         }
+      }
+      else if(s[i] == '>') 
+      {
+          ll k = j;
+          ll temp = 1;
+          while(k >= i){
+              num[k] = max(num[k],temp);
+              if(s[k-1] != '=')temp++;
+              k--;
+          }
+      }
+      i = j;
+  }
+  cout<<*max_element(all(num))<<endl;
 }
-
 /* main function */
 
 int main() 
@@ -97,8 +128,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   
   return 0;

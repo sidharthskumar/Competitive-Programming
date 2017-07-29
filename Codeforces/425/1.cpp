@@ -76,7 +76,8 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
+//const ll maxn = ;
+ll n,k;
 
 /* user define functions specific to problem */
 
@@ -86,7 +87,9 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+    cin>>n>>k;
+    if((n/k)%2 != 0) cout<<"YES";
+    else cout<<"NO";
 
 }
 

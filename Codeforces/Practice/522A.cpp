@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,17 +77,42 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+ll n;
+map<string,int> used;
+ll mx = -1;
 /* user define functions specific to problem */
 
-
+void dfs(map<string,vs> g, string v, ll depth)
+{
+    used[v] = 1;
+    mx = max(mx,depth);
+    for(auto str: g[v]){
+        if(!used.count(str)){
+            dfs(g,str,depth+1);
+        }
+    }
+}
 
 
 /* solve here */
 void solve()
 {
-     
+    set<string> s;
+    map<string,vs> g;
+    cin>>n;
+    rep(i,n){
+          string a,crap,b;
+          cin>>a>>crap>>b;
+          rep(i,sz(a)) a[i] = tolower(a[i]);
+          rep(i,sz(b)) b[i] = tolower(b[i]);
+          g[b].pb(a);
+
+    }
+   
+    dfs(g,"polycarp",0);
+
+    cout<<mx+1;
+ 
 
 }
 

@@ -76,8 +76,9 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+const ll maxn = 2e5;
+int good[28];
+int dp[maxn][28];
 /* user define functions specific to problem */
 
 
@@ -86,8 +87,70 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+     string gd;
+     cin>>gd;
+     rep(i,0,gd.length()-1) good[gd[i] - 'a'] = 1;
+     string pat;
+     cin>>pat;
+     int star = 0;
+     rep(i,0,pat.length()-1)
+     {
+         if(pat[i] == '?'){
+             rep(j,0,25){
+                 if(good[j]) dp[i][j] = 1;
+             }
+         }
+         else if(pat[i] == '*'){
+            star = 1;
+            rep(j,0,25) if(!good[j])dp[i][j] = 2;
+            ll ind = i+1;
+            while(ind < pat.length()){
+                if(pat[ind]=='?') {rep(j,0,25)if(good[j]) dp[ind-1][j] = 1;}
+                else dp[ind-1][pat[ind] - 'a'] = 1;
+                ind++;
+            }
+         }
+         else dp[i][pat[i] - 'a'] = 1;
 
+     }
+    // rep(i,0,pat.length()-1) {
+         //rep(j,0,25) cout<<dp[i][j]<<" ";
+       //  cout<<endl;
+     //}
+     ll mn = 0;
+     if(star){
+         mn = pat.length() - 1;
+     }
+     else mn =  pat.length();
+     ll mx = pat.length();
+     //cout<<mn<<mx<<endl;
+     ll q;
+     cin>>q;
+
+     while(q--)
+     {
+         string str;
+         cin>>str;
+         int flag = 0;
+
+         if(str.length() < mn || str.length() > mx) flag = 1;
+         else {
+             ll required = 0;
+             rep(k,0,str.length()-1){
+                 if(dp[k][str[k] - 'a'] == 0) {
+                     flag = 1;
+                     break;
+                 }
+                 if(dp[k][str[k]-'a'] == 2){
+                    required=1;
+                 }
+             }
+             if(required && str.length() != pat.length()) flag = 1;
+         }
+         if(flag == 0) cout<<"YES"<<endl;
+         else cout<<"NO"<<endl;
+
+    }
 }
 
 /* main function */

@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,8 +77,8 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
-
+ll v1, v2, t, d;
+ll v[200][20][2];
 /* user define functions specific to problem */
 
 
@@ -86,8 +87,34 @@ ll T;
 /* solve here */
 void solve()
 {
-     
-
+    cin>>v1>>v2;
+    cin>>t>>d;
+    t--;
+    fill(v,INT_MIN);
+    rep(k,2){
+        rep(j,d){
+            v[0][j][k] = v1;
+        }
+    }
+    ll dist = v1;
+    ll mxv = v1;
+    FOR(i,1,t-1){
+        ll lmx = INT_MIN;
+        FOR(j,0,d){
+            rep(k,2){
+               int si = -1;
+               if(k == 1) si *= -1; 
+               v[i][j][k] = max(v[i][j][k],mxv + si*j);
+               if(v[i][j][k] - (t-i)*d <= v2 && v[i][j][k] + (t-i)*d >= v2){
+                   lmx = max(lmx,v[i][j][k]);     
+               } 
+            }   
+        }
+        mxv = lmx;
+        dist += mxv;
+    }
+    dist += v2;    
+    cout<<dist<<endl;
 }
 
 /* main function */

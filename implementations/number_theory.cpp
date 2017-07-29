@@ -73,21 +73,33 @@ vl fast_sieve(ll N) {
     }
     return pr;
 }
+inline void smallestPrime(int N)
+{
+    for (int i=2; i<=N; i++)
+    { 
+        if (!prime[i])
+        { 
+            s[i] = i;
+            for (int j=2*i; j<=N; j+=i)
+            {
+                prime[j] = 1;
+                s[j] = i;
+            }
+        }
+    }
+}
+
 
 vl simpleSieve(int limit)
 {
     bool mark[limit];
     memset(mark, true, sizeof(mark));
     vl result;
-    // One by one traverse all numbers so that their
-    // multiples can be marked as composite.
-    for (ll p=2; p*p<limit; p++)
+    for (ll p=2; p*p<=limit; p++)
     {
-        // If p is not changed, then it is a prime
         if (mark[p] == true)
         {
-            // Update all multiples of p
-            for (ll i=p*2; i<limit; i+=p)
+            for (ll i=p*2; i<=limit; i+=p)
                 mark[i] = false;
         }
     }

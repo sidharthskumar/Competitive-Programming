@@ -10,8 +10,9 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define rep(i,a,b) for(long long i = (a); i <= (b); i++)
-#define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
+#define rep(i, n) for (long long i = 0; i < (n); i++)
+#define FOR(i,a,b) for(long long i = (a); i <= (b); i++)
+#define rrep(i, n) for (long long i = (n) - 1; i >= 0; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
 
 using namespace std;
@@ -76,7 +77,8 @@ void prnt(T beg, T end){
 
 /* Declare variables here*/
 ll T;
-
+ll n;
+string a,b;
 
 /* user define functions specific to problem */
 
@@ -86,7 +88,20 @@ ll T;
 /* solve here */
 void solve()
 {
-     
+     cin>>n;
+     cin>>a;
+     cin>>b;
+     sort(all(a));
+     sort(all(b));
+     ll cnt =0;
+     rep(i,n){
+        if(a[i] > b[i]) cnt++;
+     }
+     ll cn = 0;
+     reverse(all(b));
+     rep(i,n){
+         if()
+     }
 
 }
 
