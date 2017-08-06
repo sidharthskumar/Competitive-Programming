@@ -46,14 +46,29 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 
 /* Declare variables here*/
 ll T;
-const ll maxn = 2e5;
-
-
+ll n;
+const ll maxn = 3000;
+string s;
+int flag[maxn];
+char ans[maxn];
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+   cin>>n;
+   cin>>s;
+   rep(i,1,n) {
+       ll ind = ceil((n-i+1)/2.0);
+       ll curr = 0, cnt = 0;
+       while(cnt != ind){ 
+           curr++;
+           if(!flag[curr]) cnt++;
+       }
+       //db(ind)db(curr)endln
+       flag[curr] = 1;
+       ans[curr] = s[i-1];
+   }
+   rep(i,1,n) cout<<ans[i];
 }
 /* main function */
 int main() 

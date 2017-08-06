@@ -53,7 +53,37 @@ const ll maxn = 2e5;
 /* solve here */
 void solve()
 { 
-        
+   ll n,d,s = 0;
+   cin>>n>>d;
+   ll a[n];
+   rep(i,0,n-1) cin>>a[i], s+= a[i];
+   ll dcurr = 0;
+   ll val  = 0, moves = 0;
+   int flag = 0;
+   if(s % n != 0) flag = 1;
+   else val = s/n;
+   while(!flag && dcurr  < n){
+           if(dcurr + d < n){
+               if(a[dcurr] <= val){
+                    moves += (val  - a[dcurr]);
+                    a[dcurr+d] -= (val - a[dcurr]);
+                    a[dcurr] = val;
+               }
+               else {
+                   moves += (a[dcurr] - val);
+                   a[dcurr + d] += (a[dcurr]- val);
+                   a[dcurr] = val;
+               }
+           }
+           else if(a[dcurr] != val){
+               flag = 1;
+               break;
+           }
+           dcurr++;
+   }
+
+   if(flag) cout<<-1<<endl;
+   else cout<<moves<<endl;
 }
 /* main function */
 int main() 
@@ -61,8 +91,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   return 0;
 }

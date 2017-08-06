@@ -53,7 +53,13 @@ const ll maxn = 2e5;
 /* solve here */
 void solve()
 { 
-        
+    ll s,v1,v2,t1,t2;
+    cin>>s>>v1>>v2>>t1>>t2;
+    ll tf = 2*t1 + s*v1;
+    ll ts = 2*t2 + s*v2;
+    if(tf < ts) cout<<"First";
+    else if(tf > ts ) cout<<"Second";
+    else cout<<"Friendship";
 }
 /* main function */
 int main() 

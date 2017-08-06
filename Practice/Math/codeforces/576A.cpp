@@ -47,13 +47,35 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 /* Declare variables here*/
 ll T;
 const ll maxn = 2e5;
-
-
+int isprime[1003];
+int ex[1003];
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+    ll n;
+    cin>>n;
+    rep(num,1,n){
+        int prime = 1;
+        rep(i,2,floor(sqrt(num))){
+            if(num%i == 0) {prime = 0; break;}
+        }
+        if(prime) isprime[num] = 1;
+    }
+    ll ans = 0;
+    rep(num,2,n){
+        if(isprime[num]){
+            for(ll j = num; j <= n; j *= num) ex[num]++, ans++;
+        }
+    }
+    cout<<ans<<endl;
+    rep(num,2,n){
+        if(isprime[num]){
+            ll temp = num;
+            rep(e,1,ex[num]) cout<<temp<<" ", temp *= num;
+        }
+    }
+
 }
 /* main function */
 int main() 

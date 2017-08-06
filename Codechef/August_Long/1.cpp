@@ -53,7 +53,22 @@ const ll maxn = 2e5;
 /* solve here */
 void solve()
 { 
-        
+  ll n;
+  cin>>n;
+  ll s[n],copy[n];
+  rep(i,0,n-1) cin>>s[i], copy[i] = s[i];
+  vi track;
+  track.pb(0);
+  rep(i,0,n-1) if(s[i] - 1 == track[sz(track)-1]) track.pb(s[i]);
+  reverse(s,s+n);
+  int flag = 0;
+  rep(i,0,n-1) if(s[i] != copy[i]) flag = 1;
+  if(sz(track) != 8) flag = 1;
+  else {
+      rep(i,0,7) if(track[i] != i)flag = 1;
+  }
+  if(flag) cout<<"no"<<endl;
+  else cout<<"yes"<<endl;
 }
 /* main function */
 int main() 
@@ -61,8 +76,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   return 0;
 }

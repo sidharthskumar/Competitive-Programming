@@ -47,13 +47,23 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 /* Declare variables here*/
 ll T;
 const ll maxn = 2e5;
-
+ll k,l;
 
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+   cin>>k>>l;
+   ll num = 1;
+   for(ll j = 1; num <= l;j++){
+       num = num * k;
+       if(num == l){
+           cout<<"YES"<<endl;
+           cout<<j-1<<endl;
+           return;
+       }
+   }
+   cout<<"NO";
 }
 /* main function */
 int main() 

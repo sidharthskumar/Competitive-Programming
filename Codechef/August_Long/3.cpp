@@ -53,7 +53,39 @@ const ll maxn = 2e5;
 /* solve here */
 void solve()
 { 
-        
+   map<ll,ll> offsal;
+   ll n,m;
+   cin>>n>>m;
+   ll minsal[n],off[m],msj[m];
+
+   rep(i,0,n-1) cin>>minsal[i];
+   rep(i,0,m-1) {
+       cin>>off[i]>>msj[i];
+       offsal[off[i]] = msj[i];
+   }
+   ll got = 0,sgot = 0, notplaced = 0;
+   rep(i,0,n-1){
+        string qual;
+        cin>>qual;
+        ll mx = -1;
+        rep(j,0,m-1){
+            if(qual[j] == '1'){
+                if(off[j] > mx && off[j] >= minsal[i] && offsal[off[j]] > 0){
+                    mx = off[j];
+                }
+            }    
+        }
+        if(mx != -1){
+            offsal[mx]--;
+            got++;
+            sgot += mx;
+        }
+   }
+   rep(i,0,m-1){
+      if(offsal[off[i]] == msj[i]) notplaced++;
+   }
+   cout<<got<<" "<<sgot<<" "<<notplaced<<endl;
+
 }
 /* main function */
 int main() 
@@ -61,8 +93,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   return 0;
 }

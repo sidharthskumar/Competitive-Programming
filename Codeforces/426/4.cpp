@@ -46,8 +46,6 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 
 /* Declare variables here*/
 ll T;
-const ll maxn = 2e5;
-
 
 /* user define functions specific to problem */
 /* solve here */

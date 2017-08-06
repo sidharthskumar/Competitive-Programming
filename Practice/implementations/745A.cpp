@@ -8,7 +8,6 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define len(x) ((long long) (x).length())
 #define rep(i,a,b) for(long long i = (a); i <= (b); i++)
 #define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
@@ -45,15 +44,21 @@ inline ll inv(ll a, ll m = MOD) { return fpow(a,m-2,m);}
 template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) cout<<*it<<" "; cout<<endl;}
 
 /* Declare variables here*/
-ll T;
-const ll maxn = 2e5;
-
-
+ll T,ans;
+string s;
+unordered_set<string> there;
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+    cin>>s;
+    rep(i,1,s.length()) {
+        s = s[s.length()-1] + s.substr(0,s.length()-1);
+        //db(s)endln 
+        if(!present(there,s)) ans++;
+        there.insert(s);
+    }
+    cout<<ans;
 }
 /* main function */
 int main() 

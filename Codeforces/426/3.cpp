@@ -46,14 +46,24 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 
 /* Declare variables here*/
 ll T;
-const ll maxn = 2e5;
-
-
+ll n;
+ 
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+    cin>>n;
+    rep(i,1,n){
+        LD a, b;
+        cin>>a>>b; 
+        ll a1 = (ll) a, b1 = (ll) b;
+        ll c = a1 / gcd(a1,b1) , d = b1/ gcd(a1,b1);
+        if(c == 1 && d == 1) { LD cr = cbrt(a*b); if(cr == floor(cr)) cout<<"Yes"<<endl; else cout<<"No"<<endl; continue;}
+        LD x = a / (c*c*d) , y = b/ (c*d*d);
+        if(x == floor(x) && y == floor(y) && x== y) cout<<"Yes"<<endl;
+        else cout<<"No"<<endl;
+
+    }
 }
 /* main function */
 int main() 

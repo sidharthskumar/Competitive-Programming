@@ -53,7 +53,22 @@ const ll maxn = 2e5;
 /* solve here */
 void solve()
 { 
-        
+    string s,t,w;
+    vll cnta(26,0),cntb(26,0);
+    cin>>s>>t;
+    ll n = len(s);
+    if(n == 1) {cout<<'B'<<endl; return;}
+    rep(i,0,n-1) cnta[s[i]-'a']++, cntb[t[i]-'a']++;
+    char winner  = 'B';
+    int flag = 0, flag1 = 0, flag2 = 0;
+    rep(i,0,25) if(cnta[i] >= 2 && !cntb[i]){ flag = 1; break; }
+    if(!flag)rep(i,0,25) if(cnta[i] && !cntb[i]) { cnta[i]--; flag1 = 1; break; } 
+    if(flag || flag1)rep(i,0,25) if(cntb[i] && !cnta[i])     {
+        cntb[i]--;
+        flag2 = 1;
+    }
+    if(flag || (flag1 && !flag2)) winner ='A';
+    cout<<winner<<endl;
 }
 /* main function */
 int main() 
@@ -61,8 +76,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   return 0;
 }

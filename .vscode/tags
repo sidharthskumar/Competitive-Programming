@@ -1,0 +1,418 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+1.py	../Codechef/July_LunchTime/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/412/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/413/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/414/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/416/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/419/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/Edu22/1.py	1;"	kind:file	line:1
+1.py	../Codeforces/Edu23/1.py	1;"	kind:file	line:1
+1.py	../Google/Codejam-Qual/1.py	1;"	kind:file	line:1
+1.py	../Google/Codejam-Round1B/1.py	1;"	kind:file	line:1
+1.py	../Google/Kickstart 2017 round A/1.py	1;"	kind:file	line:1
+2.py	../Codechef/July_LunchTime/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/412/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/413/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/414/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/415/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/416/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/419/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/Edu22/2.py	1;"	kind:file	line:1
+2.py	../Codeforces/Edu23/2.py	1;"	kind:file	line:1
+2.py	../Google/Codejam-Qual/2.py	1;"	kind:file	line:1
+2.py	../Google/Kickstart 2017 round A/2.py	1;"	kind:file	line:1
+3.py	../Codeforces/412/3.py	1;"	kind:file	line:1
+3.py	../Codeforces/414/3.py	1;"	kind:file	line:1
+3.py	../Codeforces/416/3.py	1;"	kind:file	line:1
+3.py	../Codeforces/419/3.py	1;"	kind:file	line:1
+3.py	../Codeforces/Edu22/3.py	1;"	kind:file	line:1
+3.py	../Codeforces/Edu23/3.py	1;"	kind:file	line:1
+3.py	../Google/Codejam-Qual/3.py	1;"	kind:file	line:1
+3.py	../Google/Kickstart 2017 round A/3.py	1;"	kind:file	line:1
+4.py	../Codeforces/Edu24/4.py	1;"	kind:file	line:1
+4.py	../Google/Codejam-Qual/4.py	1;"	kind:file	line:1
+4.py	../Google/Kickstart 2017 round A/4.py	1;"	kind:file	line:1
+ACMAKER.py	../Spoj/ACMAKER.py	1;"	kind:file	line:1
+ADFRUITS.py	../Spoj/ADFRUITS.py	1;"	kind:file	line:1
+ALCATRAZ1.py	../Spoj/ALCATRAZ1.py	1;"	kind:file	line:1
+ALTSEQ.py	../Spoj/ALTSEQ.py	1;"	kind:file	line:1
+AMR11E.py	../Spoj/AMR11E.py	1;"	kind:file	line:1
+ASerialKiller(400a).py	../Codeforces/400/ASerialKiller(400a).py	1;"	kind:file	line:1
+AvoidRoads	../TopCoder/AvoidRoads.py	/^class AvoidRoads:$/;"	kind:class	line:1
+AvoidRoads.py	../TopCoder/AvoidRoads.py	1;"	kind:file	line:1
+CHEFCODE.py	../Codechef/May_long/CHEFCODE.py	1;"	kind:file	line:1
+CHEFROUT.py	../Codechef/May_long/CHEFROUT.py	1;"	kind:file	line:1
+CHEFSUBA.py	../Codechef/May_long/CHEFSUBA.py	1;"	kind:file	line:1
+Duplicates.py	../Hacker_rank/Duplicates.py	1;"	kind:file	line:1
+Duplication.py	../Hacker_rank/Duplication.py	1;"	kind:file	line:1
+FindMarble.py	../Codeforces/Practice/FindMarble.py	1;"	kind:file	line:1
+FlowerGarden	../TopCoder/FlowerGarden.py	/^class FlowerGarden:$/;"	kind:class	line:1
+FlowerGarden.py	../TopCoder/FlowerGarden.py	1;"	kind:file	line:1
+FreeCash.py	../Codeforces/Practice/FreeCash.py	1;"	kind:file	line:1
+L	../Hacker_rank/w33/TransformToPalindrome.py	/^L = [[0 for i in range(m)] for i in range(m)]$/;"	kind:variable	line:31
+LearningLanguages.py	../Codeforces/Practice/LearningLanguages.py	1;"	kind:file	line:1
+MXMEDIAN.py	../Codechef/May_long/MXMEDIAN.py	1;"	kind:file	line:1
+R	../Codeforces/419/1.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/419/2.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/419/3.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu22/1.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu22/2.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu22/3.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu23/1.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu23/2.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Codeforces/Edu23/3.py	/^def R() : return map(int,raw_input().strip().split())$/;"	kind:function	line:1
+R	../Hacker_rank/w33/TransformToPalindrome.py	/^def R(): return map(int,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/419/1.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/419/2.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/419/3.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu22/1.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu22/2.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu22/3.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu23/1.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu23/2.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+Rf	../Codeforces/Edu23/3.py	/^def Rf() : return map(float,raw_input().strip().split())$/;"	kind:function	line:2
+RomaAndChangingSigns.py	../Codeforces/Practice/RomaAndChangingSigns.py	1;"	kind:file	line:1
+Rs	../Codeforces/419/1.py	/^def Rs() : return raw_input().strip().split()$/;"	kind:function	line:3
+Rs	../Codeforces/419/2.py	/^def Rs() : return raw_input().strip().split()$/;"	kind:function	line:3
+Rs	../Codeforces/419/3.py	/^def Rs() : return raw_input().strip().split()$/;"	kind:function	line:3
+Rs	../Codeforces/Edu22/1.py	/^def Rs() : return raw_input().strip().split()$/;"	kind:function	line:3
+Sail.py	../Codeforces/Practice/Sail.py	1;"	kind:file	line:1
+SherlockAndHisGirlfriend(400b).py	../Codeforces/400/SherlockAndHisGirlfriend(400b).py	1;"	kind:file	line:1
+Sl	../Codeforces/Edu22/2.py	/^def Sl() : return raw_input().strip().split()$/;"	kind:function	line:3
+Sl	../Codeforces/Edu22/3.py	/^def Sl() : return raw_input().strip().split()$/;"	kind:function	line:3
+Sl	../Codeforces/Edu23/1.py	/^def Sl() : return raw_input().strip().split()$/;"	kind:function	line:3
+Sl	../Codeforces/Edu23/2.py	/^def Sl() : return raw_input().strip().split()$/;"	kind:function	line:3
+Sl	../Codeforces/Edu23/3.py	/^def Sl() : return raw_input().strip().split()$/;"	kind:function	line:3
+TransformToPalindrome.py	../Hacker_rank/w33/TransformToPalindrome.py	1;"	kind:file	line:1
+UNICOURS.py	../Codechef/May_long/UNICOURS.py	1;"	kind:file	line:1
+WSITE01.py	../Codechef/May_long/WSITE01.py	1;"	kind:file	line:1
+__init__	../Codechef/May_long/WSITE01.py	/^	def __init__(self):$/;"	kind:member	line:7
+__init__	../Codechef/May_long/WSITE01.py	/^	def __init__(self,alpha,sym):$/;"	kind:member	line:2
+a	../Codechef/July_LunchTime/1.py	/^    a = map(int,raw_input().strip().split())$/;"	kind:variable	line:3
+a	../Codechef/May_long/CHEFSUBA.py	/^a = map(int, raw_input().strip().split())$/;"	kind:variable	line:40
+a	../Codechef/May_long/MXMEDIAN.py	/^	a = map(int, raw_input().strip().split())$/;"	kind:variable	line:5
+a	../Codechef/May_long/UNICOURS.py	/^	a = map(int, raw_input().strip().split())$/;"	kind:variable	line:5
+a	../Codeforces/400/ASerialKiller(400a).py	/^		a = y$/;"	kind:variable	line:7
+a	../Codeforces/413/2.py	/^a = map(int, raw_input().strip().split())$/;"	kind:variable	line:3
+a	../Codeforces/414/3.py	/^a = sorted(list(raw_input().strip()))$/;"	kind:variable	line:1
+a	../Codeforces/415/2.py	/^a = []$/;"	kind:variable	line:3
+a	../Codeforces/416/2.py	/^a = map(int,raw_input().split())$/;"	kind:variable	line:2
+a	../Codeforces/Edu22/1.py	/^a = R()$/;"	kind:variable	line:6
+a	../Codeforces/Edu22/2.py	/^a = [1]$/;"	kind:variable	line:10
+a	../Codeforces/Edu23/2.py	/^a = R()$/;"	kind:variable	line:6
+a	../Google/Codejam-Qual/3.py	/^    a  = int(t\/part)$/;"	kind:variable	line:9
+a	../Hacker_rank/w33/TransformToPalindrome.py	/^a = R()$/;"	kind:variable	line:29
+a	../Spoj/ALTSEQ.py	/^a = map(int, raw_input().split())$/;"	kind:variable	line:2
+abbr	../Spoj/ACMAKER.py	/^		abbr = l[0]$/;"	kind:variable	line:10
+add_toc	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^def add_toc(html, sections):$/;"	kind:function	line:6
+allset	../Codechef/July_LunchTime/2.py	/^def allset(num):$/;"	kind:function	line:1
+alpha	../Codechef/May_long/WSITE01.py	/^alpha = alphaTree()$/;"	kind:variable	line:20
+alphaNode	../Codechef/May_long/WSITE01.py	/^class alphaNode:$/;"	kind:class	line:1
+alphaTree	../Codechef/May_long/WSITE01.py	/^class alphaTree:$/;"	kind:class	line:6
+ans	../Codeforces/414/3.py	/^ 			ans = a[n-i-1] + ans	$/;"	kind:variable	line:13
+ans	../Codeforces/414/3.py	/^ 			ans = b[j] + ans$/;"	kind:variable	line:22
+ans	../Codeforces/414/3.py	/^ans = ""$/;"	kind:variable	line:6
+ans	../Codeforces/416/2.py	/^		ans = max(curr,ans)$/;"	kind:variable	line:15
+ans	../Codeforces/416/2.py	/^ans = -1$/;"	kind:variable	line:4
+ans	../Codeforces/419/1.py	/^			ans = (60 - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0'))) + (ord(a[::-1][0]) - ord('0'))*10 + (ord(a[::-1][1]) - ord('0')) + 10$/;"	kind:variable	line:29
+ans	../Codeforces/419/1.py	/^			ans = (60 - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0')))$/;"	kind:variable	line:34
+ans	../Codeforces/419/1.py	/^			ans = (ord(a[::-1][0])- ord('0'))*10 + (ord(a[::-1][1]) - ord('0')) - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0'))$/;"	kind:variable	line:27
+ans	../Codeforces/419/1.py	/^			ans = 32 - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0'))$/;"	kind:variable	line:32
+ans	../Codeforces/419/1.py	/^		ans =  (71 - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0')))     $/;"	kind:variable	line:23
+ans	../Codeforces/419/1.py	/^		ans = (61 - ((ord(b[0]) -ord('0'))*10 + ord(b[1]) -ord('0'))) + (9 - (ord(a[1]) - ord('0')))*60$/;"	kind:variable	line:17
+ans	../Codeforces/419/1.py	/^		ans = 0$/;"	kind:variable	line:21
+ans	../Codeforces/419/1.py	/^		ans = 1$/;"	kind:variable	line:19
+ans	../Codeforces/419/1.py	/^ans = 0$/;"	kind:variable	line:7
+ans	../Codeforces/Practice/FreeCash.py	/^		ans = max(ans,c)$/;"	kind:variable	line:11
+ans	../Codeforces/Practice/FreeCash.py	/^ans = 1$/;"	kind:variable	line:3
+ans	../Codeforces/Practice/FreeCash.py	/^ans = max(ans,c)$/;"	kind:variable	line:14
+ans	../Google/Codejam-Qual/1.py	/^	ans = 0$/;"	kind:variable	line:7
+ans	../Google/Codejam-Qual/2.py	/^	ans = 0$/;"	kind:variable	line:7
+ans	../Google/Codejam-Qual/3.py	/^            ans = str(int(a \/2)) + " " + str(int(a \/2))$/;"	kind:variable	line:22
+ans	../Google/Codejam-Qual/3.py	/^            ans = str(int(a \/2)) + " " + str(int(a \/2)-1)$/;"	kind:variable	line:20
+ans	../Google/Codejam-Qual/3.py	/^            ans = str(int(b\/2)) + " " + str(int(b\/2))$/;"	kind:variable	line:17
+ans	../Google/Codejam-Qual/3.py	/^            ans = str(int(b\/2)) + " " + str(int(b\/2)-1)$/;"	kind:variable	line:15
+ans	../Google/Codejam-Round1B/1.py	/^			ans = t + (D-ks[0][0])\/(ks[0][1]) $/;"	kind:variable	line:28
+ans	../Google/Codejam-Round1B/1.py	/^	ans = 1.0$/;"	kind:variable	line:11
+ans	../Spoj/ADFRUITS.py	/^	ans = ""$/;"	kind:variable	line:31
+b	../Codechef/May_long/CHEFSUBA.py	/^b = raw_input()$/;"	kind:variable	line:41
+b	../Codechef/May_long/MXMEDIAN.py	/^	b = []$/;"	kind:variable	line:10
+b	../Codeforces/400/ASerialKiller(400a).py	/^		b = y$/;"	kind:variable	line:10
+b	../Codeforces/413/2.py	/^b = map(int, raw_input().strip().split())$/;"	kind:variable	line:4
+b	../Codeforces/414/3.py	/^b = sorted(list(raw_input().strip()))$/;"	kind:variable	line:2
+b	../Codeforces/415/2.py	/^b = []$/;"	kind:variable	line:4
+b	../Codeforces/Edu22/2.py	/^b = [1]$/;"	kind:variable	line:11
+b	../Google/Codejam-Qual/3.py	/^    b = a  + 1$/;"	kind:variable	line:11
+best_yet	../Spoj/ALTSEQ.py	/^		best_yet = dp[i]$/;"	kind:variable	line:19
+best_yet	../Spoj/ALTSEQ.py	/^best_yet = 1$/;"	kind:variable	line:10
+bfs	../python_functions.py	/^def bfs(graph, start, path=[]):$/;"	kind:function	line:21
+bigSorting.py	../Hacker_rank/bigSorting.py	1;"	kind:file	line:1
+c	../Codeforces/413/2.py	/^c = map(int, raw_input().strip().split())$/;"	kind:variable	line:6
+c	../Codeforces/Edu22/2.py	/^c = []$/;"	kind:variable	line:12
+c	../Codeforces/Edu24/4.py	/^c = map(int,raw_input().strip().split())$/;"	kind:variable	line:2
+c	../Codeforces/Practice/FindMarble.py	/^	c = p[c]$/;"	kind:variable	line:19
+c	../Codeforces/Practice/FindMarble.py	/^c = p[s]$/;"	kind:variable	line:9
+c	../Codeforces/Practice/FreeCash.py	/^		c =1	$/;"	kind:variable	line:12
+c	../Codeforces/Practice/FreeCash.py	/^c = 1$/;"	kind:variable	line:2
+check	../Codeforces/412/2.py	/^def check(key,score):$/;"	kind:function	line:3
+check	../TopCoder/FlowerGarden.py	/^		def check(ab ,aw ,bb, bw):$/;"	kind:function	line:6
+cnt	../Codechef/July_LunchTime/1.py	/^    cnt = 0$/;"	kind:variable	line:5
+cnt	../Codeforces/Edu24/4.py	/^cnt = [0]*1000001$/;"	kind:variable	line:6
+code_dir	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^code_dir = "code"$/;"	kind:variable	line:3
+code_dir	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^code_dir = "code"$/;"	kind:variable	line:3
+colors	../Codeforces/400/SherlockAndHisGirlfriend(400b).py	/^colors = [0]*(n+2)$/;"	kind:variable	line:3
+count	../Codeforces/414/1.py	/^count = 0$/;"	kind:variable	line:4
+count	../Codeforces/414/3.py	/^count = 0$/;"	kind:variable	line:7
+count	../Codeforces/Practice/FindMarble.py	/^count = 0$/;"	kind:variable	line:4
+count	../Codeforces/Practice/LearningLanguages.py	/^count =0$/;"	kind:variable	line:14
+count	../Hacker_rank/bigSorting.py	/^	count = [0]*10$/;"	kind:variable	line:22
+count	../Spoj/ALTSEQ.py	/^count = 0$/;"	kind:variable	line:5
+count	../Spoj/AMR11E.py	/^	count = 0$/;"	kind:variable	line:17
+ctr	../Google/Kickstart 2017 round A/2.py	/^				ctr = 0$/;"	kind:variable	line:22
+ctr	../Google/Kickstart 2017 round A/2.py	/^				ctr = 0$/;"	kind:variable	line:31
+ctr	../Google/Kickstart 2017 round A/2.py	/^	ctr = 0$/;"	kind:variable	line:14
+ctr	../Google/Kickstart 2017 round A/2.py	/^	ctr = 0$/;"	kind:variable	line:23
+ctrx	../Google/Kickstart 2017 round A/2.py	/^					ctrx = 0$/;"	kind:variable	line:44
+ctrx	../Google/Kickstart 2017 round A/2.py	/^	ctrx = 0$/;"	kind:variable	line:32
+ctry	../Google/Kickstart 2017 round A/2.py	/^					ctry = 0$/;"	kind:variable	line:51
+ctry	../Google/Kickstart 2017 round A/2.py	/^	ctry = 0				$/;"	kind:variable	line:33
+cura	../Spoj/ACMAKER.py	/^		cura = 0$/;"	kind:variable	line:13
+curc	../Spoj/ACMAKER.py	/^		curc = 0$/;"	kind:variable	line:14
+curr	../Codechef/May_long/WSITE01.py	/^	curr = alpha.root$/;"	kind:variable	line:36
+curr	../Codeforces/416/2.py	/^		curr = curr ^ a[j]$/;"	kind:variable	line:13
+curr	../Codeforces/416/2.py	/^		curr = curr ^ a[j]$/;"	kind:variable	line:16
+curr	../Codeforces/416/2.py	/^	curr = 0$/;"	kind:variable	line:11
+curw	../Spoj/ACMAKER.py	/^		curw = 0$/;"	kind:variable	line:12
+cx	../Codeforces/Practice/Sail.py	/^cx = sx$/;"	kind:variable	line:5
+cy	../Codeforces/Practice/Sail.py	/^cy = sy$/;"	kind:variable	line:6
+d	../Hacker_rank/bigSorting.py	/^d = len(max(unsorted , key = len))$/;"	kind:variable	line:14
+dfs	../Codeforces/Practice/LearningLanguages.py	/^def dfs(i):$/;"	kind:function	line:1
+dfs	../python_functions.py	/^def dfs(graph, start, path=[]):$/;"	kind:function	line:12
+dir	../Codeforces/Practice/Sail.py	/^dir = raw_input()$/;"	kind:variable	line:3
+dist	../Hacker_rank/q3.py	/^dist = 0$/;"	kind:variable	line:13
+done	../Codeforces/Edu22/1.py	/^done = False$/;"	kind:variable	line:10
+dp	../Spoj/ALTSEQ.py	/^dp = [0]* n $/;"	kind:variable	line:7
+f	../Codeforces/413/2.py	/^f = zip(z,a,b)$/;"	kind:variable	line:9
+f	../Google/Codejam-Qual/1.py	/^f = open("out1.txt", "w")$/;"	kind:variable	line:1
+f	../Google/Codejam-Qual/2.py	/^f = open("out1.txt", "w")$/;"	kind:variable	line:1
+f	../Google/Codejam-Qual/3.py	/^f = open("out3.txt", "w")$/;"	kind:variable	line:2
+f	../Google/Codejam-Qual/4.py	/^f= open("out4.txt","w")$/;"	kind:variable	line:1
+f	../Google/Kickstart 2017 round A/1.py	/^f= open("out1.txt","w")$/;"	kind:variable	line:1
+f	../Google/Kickstart 2017 round A/2.py	/^f= open("out2.txt","w")$/;"	kind:variable	line:1
+f	../Google/Kickstart 2017 round A/3.py	/^f= open("out3.txt","w")$/;"	kind:variable	line:1
+f	../Google/Kickstart 2017 round A/4.py	/^f= open("out4.txt","w")$/;"	kind:variable	line:1
+filters	../Codechef/May_long/WSITE01.py	/^filters	= set()$/;"	kind:variable	line:32
+final_filters	../Codechef/May_long/WSITE01.py	/^	final_filters  = sorted(list(filters))$/;"	kind:variable	line:49
+find	../Hacker_rank/w33/TransformToPalindrome.py	/^def find(ind):$/;"	kind:function	line:8
+first	../Codeforces/Edu24/4.py	/^first = set()$/;"	kind:variable	line:3
+first_ones	../Codechef/May_long/CHEFSUBA.py	/^first_ones = 0$/;"	kind:variable	line:45
+flag	../Codeforces/412/2.py	/^			flag = True$/;"	kind:variable	line:28
+flag	../Codeforces/412/2.py	/^flag = False$/;"	kind:variable	line:13
+flag	../Codeforces/413/1.py	/^	flag = False$/;"	kind:variable	line:16
+flag	../Codeforces/413/1.py	/^flag = True$/;"	kind:variable	line:14
+flag	../Codeforces/Practice/Sail.py	/^		flag = 1$/;"	kind:variable	line:17
+flag	../Codeforces/Practice/Sail.py	/^flag= 0 $/;"	kind:variable	line:7
+flag	../Google/Codejam-Qual/1.py	/^			flag = 1$/;"	kind:variable	line:17
+flag	../Google/Codejam-Qual/1.py	/^	flag = 0$/;"	kind:variable	line:10
+flag	../Google/Codejam-Qual/2.py	/^			flag = 1$/;"	kind:variable	line:17
+flag	../Google/Codejam-Qual/2.py	/^	flag = 0$/;"	kind:variable	line:10
+flag	../Google/Kickstart 2017 round A/2.py	/^	flag = [ [False for i in range(m+1)] for j in range(n+1)]$/;"	kind:variable	line:11
+flag	../Hacker_rank/q3.py	/^flag = False$/;"	kind:variable	line:12
+flag	../Spoj/ACMAKER.py	/^			flag = False $/;"	kind:variable	line:24
+flag	../Spoj/ACMAKER.py	/^		flag = True$/;"	kind:variable	line:15
+flag	../Spoj/ALTSEQ.py	/^flag = False$/;"	kind:variable	line:4
+flagChanged	../Codeforces/412/1.py	/^		flagChanged = True$/;"	kind:variable	line:12
+flagChanged	../Codeforces/412/1.py	/^	flagChanged = True$/;"	kind:variable	line:9
+flagChanged	../Codeforces/412/1.py	/^flagChanged = False$/;"	kind:variable	line:6
+flagOrder	../Codeforces/412/1.py	/^		flagOrder = True$/;"	kind:variable	line:14
+flagOrder	../Codeforces/412/1.py	/^flagOrder = False$/;"	kind:variable	line:7
+generate_html.py	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	1;"	kind:file	line:1
+generate_pdf.py	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	1;"	kind:file	line:1
+getOrdering	../TopCoder/FlowerGarden.py	/^	def getOrdering(self, height, bloom ,wilt) :$/;"	kind:member	line:2
+get_html_enscript	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^def get_html_enscript(sections):$/;"	kind:function	line:48
+get_max	../Codechef/May_long/CHEFSUBA.py	/^def get_max():$/;"	kind:function	line:12
+get_sections	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^def get_sections():$/;"	kind:function	line:24
+get_sections	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^def get_sections():$/;"	kind:function	line:6
+get_style	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^def get_style(filename):$/;"	kind:function	line:30
+get_tex	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^def get_tex(sections):$/;"	kind:function	line:47
+html	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^    html = add_toc(html, sections)$/;"	kind:variable	line:61
+html	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^    html = get_html_enscript(sections)$/;"	kind:variable	line:60
+i	../Codechef/May_long/MXMEDIAN.py	/^	i = 0$/;"	kind:variable	line:7
+i	../Codeforces/Practice/RomaAndChangingSigns.py	/^i = 0$/;"	kind:variable	line:3
+i	../Google/Codejam-Round1B/1.py	/^		i = 1$/;"	kind:variable	line:16
+ind	../Codechef/May_long/CHEFROUT.py	/^	ind =0$/;"	kind:variable	line:4
+ind	../Codeforces/416/2.py	/^	ind = n-1$/;"	kind:variable	line:8
+ind	../Codeforces/Edu24/4.py	/^ind = 0$/;"	kind:variable	line:5
+ind	../Google/Codejam-Qual/1.py	/^	ind = 0$/;"	kind:variable	line:8
+ind	../Google/Codejam-Qual/2.py	/^	ind = 0$/;"	kind:variable	line:8
+ind	../Hacker_rank/q3.py	/^ind = s$/;"	kind:variable	line:4
+inp	../Hacker_rank/bigSorting.py	/^	inp = map( lambda x : x[d-1-i] , normalized)$/;"	kind:variable	line:20
+insert_string	../Codechef/May_long/WSITE01.py	/^	def insert_string(self,string,sym):$/;"	kind:member	line:10
+inx	../Codeforces/Edu24/4.py	/^inx = []$/;"	kind:variable	line:4
+j	../Codechef/May_long/MXMEDIAN.py	/^	j = 2*n -1;$/;"	kind:variable	line:8
+j	../Hacker_rank/w33/TransformToPalindrome.py	/^		j = i + cl - 1$/;"	kind:variable	line:38
+k	../Codechef/May_long/CHEFCODE.py	/^k = math.log(k,2)$/;"	kind:variable	line:10
+k	../Codechef/May_long/CHEFSUBA.py	/^	k = n$/;"	kind:variable	line:44
+k	../Google/Codejam-Qual/1.py	/^	k = int(k)$/;"	kind:variable	line:6
+k	../Google/Codejam-Qual/2.py	/^	k = int(k)$/;"	kind:variable	line:6
+k	../Hacker_rank/bigSorting.py	/^	k = 0$/;"	kind:variable	line:34
+k	../Spoj/AMR11E.py	/^	k = input()$/;"	kind:variable	line:14
+key	../Codechef/May_long/WSITE01.py	/^	key = 0$/;"	kind:variable	line:35
+ks	../Google/Codejam-Round1B/1.py	/^			ks = ks[:ti]$/;"	kind:variable	line:34
+ks	../Google/Codejam-Round1B/1.py	/^	ks= []$/;"	kind:variable	line:5
+l	../Codechef/May_long/CHEFCODE.py	/^l = [1000]*70 $/;"	kind:variable	line:7
+l	../Codechef/May_long/CHEFCODE.py	/^l = map(lambda x: math.log(x,2) , l)$/;"	kind:variable	line:9
+l	../Codechef/May_long/MXMEDIAN.py	/^	l = []$/;"	kind:variable	line:9
+l	../Codeforces/412/1.py	/^l = []$/;"	kind:variable	line:2
+l	../Codeforces/414/1.py	/^l = map(int, raw_input().strip().split())$/;"	kind:variable	line:3
+l	../Codeforces/Edu22/1.py	/^l = [R() for i in range(m)]$/;"	kind:variable	line:8
+l	../Codeforces/Practice/RomaAndChangingSigns.py	/^l = map(int,raw_input().split())$/;"	kind:variable	line:2
+l	../Hacker_rank/q3.py	/^l = set()$/;"	kind:variable	line:10
+l	../Spoj/ACMAKER.py	/^		l = x.strip().split()$/;"	kind:variable	line:9
+l	../Spoj/ADFRUITS.py	/^	l = [ [0 for i in range(n+1)] for j in range(m+1)]$/;"	kind:variable	line:9
+last	../Codeforces/413/2.py	/^last = [0] * (3)$/;"	kind:variable	line:11
+later	../Codechef/May_long/WSITE01.py	/^later = []$/;"	kind:variable	line:21
+latexmk_options	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^    latexmk_options = ["latexmk", "-pdf", "notebook.tex"]$/;"	kind:variable	line:63
+left	../Google/Codejam-Qual/3.py	/^    left = k - part + 1$/;"	kind:variable	line:12
+leng	../Codechef/May_long/CHEFCODE.py	/^		leng = len(prod)$/;"	kind:variable	line:18
+m	../Codeforces/413/2.py	/^m = input()$/;"	kind:variable	line:5
+m	../Codeforces/Edu22/1.py	/^m = input()$/;"	kind:variable	line:7
+m	../Google/Kickstart 2017 round A/2.py	/^	m = len(x)$/;"	kind:variable	line:9
+max_ones	../Codechef/May_long/CHEFSUBA.py	/^			max_ones = get_max()/;"	kind:variable	line:65
+max_ones	../Codechef/May_long/CHEFSUBA.py	/^max_ones = 0$/;"	kind:variable	line:46
+max_ones	../Codechef/May_long/CHEFSUBA.py	/^max_ones = get_max()$/;"	kind:variable	line:52
+mx	../Codechef/July_LunchTime/1.py	/^            mx = max(mx,el)$/;"	kind:variable	line:11
+mx	../Codechef/July_LunchTime/1.py	/^    mx = 1$/;"	kind:variable	line:6
+mx	../Codeforces/Edu22/2.py	/^mx = -1$/;"	kind:variable	line:8
+n	../Codechef/July_LunchTime/1.py	/^    n = len(a) - 1$/;"	kind:variable	line:4
+n	../Codechef/May_long/CHEFROUT.py	/^	n = len(s)$/;"	kind:variable	line:5
+n	../Codechef/May_long/MXMEDIAN.py	/^	n = input()$/;"	kind:variable	line:4
+n	../Codechef/May_long/UNICOURS.py	/^	n  = input()$/;"	kind:variable	line:3
+n	../Codechef/May_long/WSITE01.py	/^n = input()$/;"	kind:variable	line:19
+n	../Codeforces/400/ASerialKiller(400a).py	/^n = input()$/;"	kind:variable	line:2
+n	../Codeforces/400/SherlockAndHisGirlfriend(400b).py	/^n = input()$/;"	kind:variable	line:1
+n	../Codeforces/412/1.py	/^n = input()$/;"	kind:variable	line:1
+n	../Codeforces/413/2.py	/^n = input()$/;"	kind:variable	line:1
+n	../Codeforces/414/1.py	/^n = input()$/;"	kind:variable	line:2
+n	../Codeforces/414/3.py	/^n = len(a)$/;"	kind:variable	line:3
+n	../Codeforces/416/1.py	/^n = 1$/;"	kind:variable	line:3
+n	../Codeforces/416/2.py	/^n = input()$/;"	kind:variable	line:1
+n	../Codeforces/416/3.py	/^n = input()$/;"	kind:variable	line:1
+n	../Codeforces/Edu22/1.py	/^n = input()$/;"	kind:variable	line:5
+n	../Codeforces/Edu23/2.py	/^n = input()$/;"	kind:variable	line:5
+n	../Codeforces/Practice/FreeCash.py	/^n = input()$/;"	kind:variable	line:1
+n	../Google/Codejam-Qual/1.py	/^	n = len(s)$/;"	kind:variable	line:9
+n	../Google/Codejam-Qual/2.py	/^	n = len(s)$/;"	kind:variable	line:9
+n	../Google/Codejam-Qual/4.py	/^	n = input()$/;"	kind:variable	line:7
+n	../Google/Kickstart 2017 round A/2.py	/^	n = len(y)$/;"	kind:variable	line:10
+n	../Google/Kickstart 2017 round A/3.py	/^	n = input()$/;"	kind:variable	line:7
+n	../Google/Kickstart 2017 round A/4.py	/^	n = input()$/;"	kind:variable	line:7
+n	../Hacker_rank/bigSorting.py	/^n = int(raw_input().strip())$/;"	kind:variable	line:6
+n	../Spoj/ACMAKER.py	/^n = input()$/;"	kind:variable	line:1
+n	../Spoj/ALCATRAZ1.py	/^	n = raw_input()$/;"	kind:variable	line:3
+n	../Spoj/ALTSEQ.py	/^n = input()$/;"	kind:variable	line:1
+n_squares	../Google/Kickstart 2017 round A/1.py	/^def n_squares(m,n):$/;"	kind:function	line:5
+negFlag	../Codeforces/412/2.py	/^		negFlag = True$/;"	kind:variable	line:20
+negFlag	../Codeforces/412/2.py	/^negFlag = False$/;"	kind:variable	line:16
+new	../Codeforces/400/SherlockAndHisGirlfriend(400b).py	/^new = 1$/;"	kind:variable	line:2
+normalized	../Hacker_rank/bigSorting.py	/^normalized =[]$/;"	kind:variable	line:15
+nsc	../Codeforces/412/2.py	/^nsc = x$/;"	kind:variable	line:15
+num	../Google/Codejam-Qual/3.py	/^    num = t - a  *part$/;"	kind:variable	line:10
+num	../Spoj/AMR11E.py	/^	num = 30$/;"	kind:variable	line:16
+numWays	../TopCoder/AvoidRoads.py	/^	def numWays(self,width ,height,bad):$/;"	kind:member	line:2
+occupied	../Codechef/May_long/UNICOURS.py	/^			occupied = a[i]$/;"	kind:variable	line:8
+occupied	../Codechef/May_long/UNICOURS.py	/^	occupied = 0$/;"	kind:variable	line:4
+org_y	../Codeforces/412/3.py	/^	org_y = y$/;"	kind:variable	line:5
+out	../Hacker_rank/bigSorting.py	/^	out = [""]*n$/;"	kind:variable	line:21
+over	../Google/Codejam-Round1B/1.py	/^			over = True$/;"	kind:variable	line:27
+over	../Google/Codejam-Round1B/1.py	/^	over = False$/;"	kind:variable	line:10
+p	../Codeforces/413/2.py	/^p = map(int, raw_input().strip().split()) $/;"	kind:variable	line:2
+p	../Codeforces/Practice/FindMarble.py	/^p = [0]+p$/;"	kind:variable	line:3
+p	../Codeforces/Practice/FindMarble.py	/^p = map(int, raw_input().split())$/;"	kind:variable	line:2
+pa	../Codeforces/Edu22/2.py	/^pa = 1$/;"	kind:variable	line:14
+parent	../Hacker_rank/w33/TransformToPalindrome.py	/^parent = [i for i in range(n+1)]$/;"	kind:variable	line:5
+part	../Google/Codejam-Qual/3.py	/^    part = int(math.pow(2, int(math.log(k, 2))))$/;"	kind:variable	line:7
+pb	../Codeforces/Edu22/2.py	/^pb = 1$/;"	kind:variable	line:15
+possible	../Codechef/May_long/WSITE01.py	/^possible = True$/;"	kind:variable	line:33
+primes	../Spoj/AMR11E.py	/^	primes = sieve(1000)$/;"	kind:variable	line:15
+print_array	../Codechef/May_long/CHEFSUBA.py	/^def print_array():$/;"	kind:function	line:1
+prod	../Codechef/May_long/CHEFCODE.py	/^prod = []$/;"	kind:variable	line:14
+python_functions.py	../python_functions.py	1;"	kind:file	line:1
+q3.py	../Hacker_rank/q3.py	1;"	kind:file	line:1
+r	../Hacker_rank/q3.py	/^r  = []$/;"	kind:variable	line:5
+rank	../Hacker_rank/w33/TransformToPalindrome.py	/^rank  = [0]*(n+1)$/;"	kind:variable	line:6
+ref	../Codeforces/Practice/LearningLanguages.py	/^ref = {};$/;"	kind:variable	line:9
+ref	../Codeforces/Practice/Sail.py	/^ref ={'E' : 1 ,'W' : -1 , 'N' : 1, 'S': -1}$/;"	kind:variable	line:1
+ref	../Spoj/ACMAKER.py	/^	ref = {}$/;"	kind:variable	line:4
+remain	../Codeforces/413/1.py	/^	remain = remain - k$/;"	kind:variable	line:20
+remain	../Codeforces/413/1.py	/^	remain = remain - k$/;"	kind:variable	line:26
+remain	../Codeforces/413/1.py	/^remain = n - (((d\/\/t)+1)*k)$/;"	kind:variable	line:11
+s	../Codechef/May_long/CHEFROUT.py	/^	s =raw_input()$/;"	kind:variable	line:3
+s	../Codeforces/415/2.py	/^s= 0$/;"	kind:variable	line:16
+s	../Spoj/ALCATRAZ1.py	/^	s = 0$/;"	kind:variable	line:4
+sc	../Codeforces/412/2.py	/^			sc = sc+50$/;"	kind:variable	line:30
+sc	../Codeforces/412/2.py	/^sc = x$/;"	kind:variable	line:14
+second	../Codeforces/Edu24/4.py	/^			second = set()$/;"	kind:variable	line:20
+sections	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^    sections = get_sections()$/;"	kind:variable	line:59
+sections	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^    sections = get_sections()$/;"	kind:variable	line:59
+shift_count	../Codechef/May_long/CHEFSUBA.py	/^		shift_count = (shift_count + 1)%n$/;"	kind:variable	line:58
+shift_count	../Codechef/May_long/CHEFSUBA.py	/^shift_count = 0		$/;"	kind:variable	line:51
+sieve	../Spoj/AMR11E.py	/^def sieve(limit):$/;"	kind:function	line:1
+sieve	../python_functions.py	/^def sieve(limit):$/;"	kind:function	line:1
+state	../Spoj/ACMAKER.py	/^		state = [[0]*150]*len(abbr)$/;"	kind:variable	line:16
+t	../Codechef/July_LunchTime/1.py	/^t = input()$/;"	kind:variable	line:1
+t	../Codechef/July_LunchTime/2.py	/^t = input()$/;"	kind:variable	line:6
+t	../Codechef/May_long/CHEFROUT.py	/^t = input()$/;"	kind:variable	line:1
+t	../Codechef/May_long/MXMEDIAN.py	/^t = input()$/;"	kind:variable	line:1
+t	../Codechef/May_long/UNICOURS.py	/^t= input()$/;"	kind:variable	line:1
+t	../Codeforces/412/3.py	/^t = input()$/;"	kind:variable	line:2
+t	../Codeforces/Practice/Sail.py	/^t = 0$/;"	kind:variable	line:4
+t	../Google/Codejam-Qual/1.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Codejam-Qual/2.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Codejam-Qual/3.py	/^    t = N - part + 1$/;"	kind:variable	line:8
+t	../Google/Codejam-Qual/3.py	/^t = input()$/;"	kind:variable	line:3
+t	../Google/Codejam-Qual/4.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Codejam-Round1B/1.py	/^	t = 0$/;"	kind:variable	line:12
+t	../Google/Codejam-Round1B/1.py	/^t = input()$/;"	kind:variable	line:1
+t	../Google/Kickstart 2017 round A/1.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Kickstart 2017 round A/2.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Kickstart 2017 round A/3.py	/^t = input()$/;"	kind:variable	line:2
+t	../Google/Kickstart 2017 round A/4.py	/^t = input()$/;"	kind:variable	line:2
+t	../Spoj/ALCATRAZ1.py	/^t = input()$/;"	kind:variable	line:1
+t	../Spoj/AMR11E.py	/^t = input()$/;"	kind:variable	line:12
+taken	../Codeforces/413/2.py	/^taken = [False]*n$/;"	kind:variable	line:12
+tex	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^    tex = get_tex(sections)$/;"	kind:variable	line:60
+texify	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^def texify(s):$/;"	kind:function	line:42
+texp	../Google/Codejam-Round1B/1.py	/^			texp = (ks[i][0]-ks[i-1][0])\/(ks[i-1][1] - ks[i][1]) $/;"	kind:variable	line:21
+ti	../Google/Codejam-Round1B/1.py	/^				ti = i$/;"	kind:variable	line:24
+ti	../Google/Codejam-Round1B/1.py	/^		ti = -1$/;"	kind:variable	line:15
+title	../ACM-ICPC/ACM-codebook/stanfordacm/generate_html.py	/^title = "Stanford ACM-ICPC Team Notebook"$/;"	kind:variable	line:4
+title	../ACM-ICPC/ACM-codebook/stanfordacm/generate_pdf.py	/^title = "Stanford ACM-ICPC Team Notebook"$/;"	kind:variable	line:4
+tmin	../Google/Codejam-Round1B/1.py	/^				tmin = texp$/;"	kind:variable	line:23
+tmin	../Google/Codejam-Round1B/1.py	/^		tmin = 10**10$/;"	kind:variable	line:14
+union	../Hacker_rank/w33/TransformToPalindrome.py	/^def union(x ,y):$/;"	kind:function	line:13
+unsorted	../Hacker_rank/bigSorting.py	/^unsorted = []$/;"	kind:variable	line:7
+unsorted_i	../Hacker_rank/bigSorting.py	/^unsorted_i = 0$/;"	kind:variable	line:8
+unsorted_t	../Hacker_rank/bigSorting.py	/^    unsorted_t = str(raw_input().strip())$/;"	kind:variable	line:10
+v	../Codeforces/415/2.py	/^v= []$/;"	kind:variable	line:2
+vis	../Codeforces/Practice/LearningLanguages.py	/^vis = [False]*(n+1)$/;"	kind:variable	line:13
+with_new	../Codeforces/413/1.py	/^with_new = d$/;"	kind:variable	line:4
+without_new	../Codeforces/413/1.py	/^	without_new = t * (n\/\/k) + t $/;"	kind:variable	line:9
+without_new	../Codeforces/413/1.py	/^	without_new = t * (n\/\/k)$/;"	kind:variable	line:7
+without_new	../Codeforces/413/1.py	/^without_new = 0$/;"	kind:variable	line:3
+words	../Spoj/ACMAKER.py	/^		words = l[1:]$/;"	kind:variable	line:11
+x	../Codeforces/419/1.py	/^x = raw_input()$/;"	kind:variable	line:5
+x	../Codeforces/Edu23/2.py	/^	x = a.count(a[1])$/;"	kind:variable	line:12
+x	../Codeforces/Edu23/2.py	/^	x = a.count(a[2])$/;"	kind:variable	line:15
+x	../Google/Kickstart 2017 round A/2.py	/^	x = raw_input()$/;"	kind:variable	line:7
+x	../Spoj/ACMAKER.py	/^	x = raw_input()$/;"	kind:variable	line:7
+x	../Spoj/ADFRUITS.py	/^	x = [False] * len(a)$/;"	kind:variable	line:6
+y	../Google/Kickstart 2017 round A/2.py	/^	y = raw_input()$/;"	kind:variable	line:8
+y	../Spoj/ADFRUITS.py	/^	y = [False] * len(b)$/;"	kind:variable	line:7
+z	../Codeforces/413/2.py	/^z = list(enumerate(p))$/;"	kind:variable	line:8
+z	../Codeforces/416/2.py	/^	z = a[i]$/;"	kind:variable	line:7

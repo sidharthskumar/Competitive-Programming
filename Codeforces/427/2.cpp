@@ -47,14 +47,38 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 /* Declare variables here*/
 ll T;
 const ll maxn = 2e5;
-
-
+ll k;
+string n;
+ll cnt[10];
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+   cin>>k;
+   cin>>n;
+   ll s = 0;
+   rep(i,0,len(n)-1) s += n[i] - '0';
+   rep(i,0,len(n)-1) cnt[n[i] -'0']++;
+   if(s >= k) {
+       cout<<0;
+       return;
+   }
+   ll left = k - s;
+   ll diff = 0;
+   ll ind = 0;
+   while(left > 0){
+       while(left > 0 && cnt[ind] > 0){
+           left -= (9-ind);  
+           cnt[ind]--;
+           diff++; 
+       }
+       ind++;
+       if(ind == 10) break;
+   }
+   
+   cout<<diff;
 }
+    
 /* main function */
 int main() 
 {

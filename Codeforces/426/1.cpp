@@ -47,14 +47,45 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 /* Declare variables here*/
 ll T;
 const ll maxn = 2e5;
-
-
+ll n;
+char a,b;
+map<char,int> rf;
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
-}
+   rf['^'] = 0;
+   rf['>'] = 1;
+   rf['v'] = 2;
+   rf['<'] = 3;
+   cin>>a>>b;
+   cin>>n;
+   ll diffcw,diffccw;
+   if(rf[b] >= rf[a]) {
+       diffcw = rf[b] - rf[a];
+       diffccw = rf[a] + 4 - rf[b];}
+   else { 
+       diffcw = 4 - rf[a] + rf[b];
+       diffccw = rf[a] - rf[b];
+   }
+   n = n%4;
+   //db(diffcw) db(diffccw);
+   if( n == diffcw){
+       if(n  == diffccw){
+           cout<<"undefined";
+           return;
+       }
+       cout<<"cw";
+       return;
+   }
+   else if(n == diffccw){
+       cout<<"ccw";
+       return;
+   }
+   cout<<"undefined";
+   return;
+    
+} 
 /* main function */
 int main() 
 {

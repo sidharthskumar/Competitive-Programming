@@ -46,14 +46,36 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 
 /* Declare variables here*/
 ll T;
-const ll maxn = 2e5;
-
-
+ll n,k;
+map<char,int> o;
+map<char,int> c;
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+    cin>>n>>k;
+    int flag = 0;
+    string s;
+    cin>>s;
+    rep(i,0,len(s) -1) {
+        if(!o.count(s[i])) o[s[i]] = i;
+        c[s[i]] = i+1;
+    }
+    rep(t,0,len(s)+1){
+        ll ng = 0;
+        rep(i,0,25){
+            char curr = 'A' + i; 
+            if(!o.count(curr)) continue;
+            if(t >= o[curr] && t < c[curr]) ng++;
+        }
+        //db(t)db(ng)endln
+        if(ng > k) {
+            flag = 1;
+            break;
+        }
+    }
+    if(flag) cout<<"YES";
+    else cout<<"NO";
 }
 /* main function */
 int main() 

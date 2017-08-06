@@ -8,7 +8,6 @@
 #define pb push_back
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((long long) (x).size())
-#define len(x) ((long long) (x).length())
 #define rep(i,a,b) for(long long i = (a); i <= (b); i++)
 #define rrep(i,a,b) for (long long i = (a) - 1; i >= b; i--)
 #define fill(x, y) memset(x, y, sizeof(x))
@@ -46,14 +45,18 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 
 /* Declare variables here*/
 ll T;
-const ll maxn = 2e5;
-
-
+ll n,sa,sb;
+ll a[111],b[111];
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+    cin>>n;
+    rep(i,1,n) cin>>a[i]>>b[i], sa += a[i] , sb += b[i];
+    if(sa % 2 == 0 && sb % 2 == 0) { cout<<0; return; }
+    if(sa % 2 + sb % 2 == 1) { cout<<-1; return; }
+    rep(i,1,n) if((a[i]%2 && !(b[i]%2)) ||  (!(a[i]%2) && b[i]%2))  { cout<<1; return; }
+    cout<<-1;
 }
 /* main function */
 int main() 

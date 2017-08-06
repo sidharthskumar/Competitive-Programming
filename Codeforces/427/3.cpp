@@ -48,19 +48,43 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 ll T;
 const ll maxn = 2e5;
 
+ll ans[103][103][13];
+ll n,q,c;
+
+
 
 /* user define functions specific to problem */
 /* solve here */
 void solve()
 { 
-        
+   scanf("%lld%lld%lld",&n,&q,&c);
+   rep(i,1,n){
+       ll x,y,s;
+       scanf("%lld%lld%lld",&x,&y,&s);
+       ans[x][y][s]++;
+   }
+   rep(i,1,q){
+       ll t,x1,y1,x2,y2;
+       scanf("%lld%lld%lld%lld%lld",&t,&x1,&y1,&x2,&y2);
+       vi value(13);
+       rep(z,0,min(10ll,c)) value[z] = (z + t)%(c+1);
+       ll an = 0;
+       rep(x,x1,x2){
+           rep(y,y1,y2){
+               rep(num,0,min(10ll,c)){
+                  an +=  (ans[x][y][num] *  value[num]);
+               }
+           }
+       }
+       printf("%lld\n",an);
+   } 
 }
 /* main function */
 int main() 
 {
-  std::ios::sync_with_stdio(false);
-  cin.tie(0);
-  cout.tie(0); 
+  //std::ios::sync_with_stdio(false);
+  //cin.tie(0);
+  //cout.tie(0); 
   //cin>>T;
   //while(T--)
   solve();

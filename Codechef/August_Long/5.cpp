@@ -48,12 +48,28 @@ template <typename T> void prnt(T beg, T end){ for(T it = beg; it != end; it++) 
 ll T;
 const ll maxn = 2e5;
 
-
 /* user define functions specific to problem */
 /* solve here */
 void solve()
-{ 
-        
+{
+   ll n;
+   cin>>n;
+   if(n==1){ cout<<1<<endl; return;}
+   vll a(n);
+   rep(i,0,n-1) cin>>a[i];
+   vll var;
+   var.pb(a[0]);
+   rep(i,0,var[0]) {
+       if(a[1] - i == 0) {
+           var[0] = i;
+           break;
+       }
+   }
+   var.pb(a[1]);
+   rep(i,2,n-1){
+        cout<<i<<endl;
+   }
+   
 }
 /* main function */
 int main() 
@@ -61,8 +77,8 @@ int main()
   std::ios::sync_with_stdio(false);
   cin.tie(0);
   cout.tie(0); 
-  //cin>>T;
-  //while(T--)
+  cin>>T;
+  while(T--)
   solve();
   return 0;
 }
